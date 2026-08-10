@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "The submitted site boundary and the three key-area polygons are the repository's provisional rough polygons (PROV-SITE-001 / PROV-KEY-001/002/003), not official redlines.",
+      "impact": "All geometry, areas, ratios, figures, PDFs, and HTML must be recalculated after an official or cleared boundary is supplied; until then the package is reviewable for content but not for precise statutory area claims."
+    },
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-INTENSITY-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Floor area ratio, building height, building density, green ratio, and setback controls are absent from the public site package; building footprints in geometry/buildings.geojson are conceptual massing, not approved scale.",
+      "impact": "Any intensity, height, or demolition/renovation/retention conclusion is a design suggestion for professional deepening and must not be read as a regulatory decision."
+    },
+    {
+      "id": "A-OPERATION-001",
+      "status": "conceptual_suggestion",
+      "statement": "Naming, logo direction, scenario cards, personas, landmarks, cultural narrative, annual events, and developer-community mechanisms are open co-creation suggestions, not confirmed government programs or funding commitments.",
+      "impact": "Operational and brand content requires organizer and rights-holder approval before any real deployment; no implementation guarantee is claimed."
+    },
+    {
+      "id": "A-PRIVACY-001",
+      "status": "conceptual_suggestion",
+      "statement": "Every AI scenario is designed around data minimization, public or authorized data only, explainability, and mandatory human review; no scenario depends on undisclosed personal profiling or pervasive surveillance.",
+      "impact": "Scenarios remain reviewable concept designs; any deployment must pass separate privacy, security, and legal assessment."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-10T00:00:00Z",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "submissions/Pasukalu/ai-metabolism-belt",
+      "message": "validate_local_submission.py 全项通过（双语 v2 契约、矩阵覆盖、文件大小与 PR 范围检查）。"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/",
+      "message": "用地分区无缝全覆盖、重点区与图层均在临时边界内、指标复算一致；临时边界保留精度警示。"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "离线静态页面包含全部必备版块，data-metric 与 metrics.json 一致，无远程资源。"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "标准矩阵覆盖全部强制标准，设计深度项全部 complete，正文含章节级证据锚点。"
+    },
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "使用仓库临时粗略边界（provisional_constraint）；官方红线到位后须全图层复算。"
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "三处重点区为临时矩形占位，不作 official redline 或精确面积依据。"
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "用地多边形由统一切线网格生成，相邻分区共享边界坐标，无重叠无缺口。"
+    },
+    {
+      "check_id": "METRICS_RECALC",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json",
+      "message": "面积与比例指标由序列化后的 GeoJSON 在 EPSG:4548 复算，与空间复核一致。"
+    },
+    {
+      "check_id": "BILINGUAL_PACKAGE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "中英文主稿、HTML、A3/A0 与含文字图件均成对提供，章节与指标对齐。"
+    }
+  ]
+}

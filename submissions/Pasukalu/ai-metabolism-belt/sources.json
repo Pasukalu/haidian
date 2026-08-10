@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, standards, and schemas; the semantic basis for every structured field in this package."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Shared registry distinguishing formal-ready, background-only, and provisional-only materials; governs evidence grading in this proposal."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "publisher": "Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch",
+      "published_date": "2026-05-09",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Primary basis for the three scope levels, three key-area values, design tasks, deliverable depth, and language requirements."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "publisher": "User-provided cleared taskbook excerpt",
+      "published_date": "2026-05-18",
+      "accessed_date": "2026-08-10",
+      "source_type": "user_provided_cleared",
+      "usage": "Basis for responding to agent.1-agent.6, the ten co-creation principles, review dimensions, and the unified boundary clause."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "publisher": "Repository maintainers",
+      "published_date": "2026-06-05",
+      "accessed_date": "2026-08-10",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for_formal": "provisional_only",
+      "usage": "Submitted overall-design-area provisional boundary (PROV-SITE-001), used only for generation, visualization, and intake self-check.",
+      "limitations": "Not an official redline, approval basis, or precise-area basis; all layers must be recalculated once an official polygon is supplied."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "publisher": "Repository maintainers",
+      "published_date": "2026-06-05",
+      "accessed_date": "2026-08-10",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for_formal": "provisional_only",
+      "usage": "Provisional rough polygons for the three key detailed-design areas (PROV-KEY-001/002/003), used only for generation, visualization, and intake self-check.",
+      "limitations": "The announcement gives no key-area boundary text; rectangles are placeholders only and do not express parcels or road redlines."
+    },
+    {
+      "id": "STD-MOHURD-URBAN-DESIGN",
+      "path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
+      "publisher": "Ministry of Housing and Urban-Rural Development, PRC",
+      "published_date": "2017-03-14",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Professional standard basis for coordinating public space, city character, and building height/volume/style controls in urban design."
+    },
+    {
+      "id": "STD-MOHURD-CTRL-DETAIL",
+      "path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
+      "publisher": "Ministry of Housing and Urban-Rural Development, PRC",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Regulatory-detailed-planning depth reference; the methodological basis for separating known controls, design suggestions, and pending items."
+    },
+    {
+      "id": "STD-MNR-LAND-USE",
+      "path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
+      "publisher": "Ministry of Natural Resources, PRC",
+      "published_date": "2023-11-22",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Unified semantics for land-use codes (07/08/05/14/16/1207 etc.) used in geometry/land_use.geojson and metrics."
+    },
+    {
+      "id": "STD-GEN-AI-MEASURES",
+      "path": "brief/site-package/standards/references/generative-ai-interim-measures.md",
+      "publisher": "Cyberspace Administration of China and six other departments",
+      "published_date": "2023-07-13",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Background governance basis for AI scenario content-safety and complaint-handling boundaries.",
+      "limitations": "Cited only within the scope of Articles 2, 14, 15, and 17; not a case-specific compliance determination."
+    },
+    {
+      "id": "STD-BARRIER-FREE",
+      "path": "brief/site-package/standards/references/barrier-free-environment-law.md",
+      "publisher": "Standing Committee of the National People's Congress, PRC",
+      "published_date": "2023-06-28",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usage": "Basis for retaining on-site guidance and human-operated fallback in public-service scenarios.",
+      "limitations": "Article 39 applies only to the listed medical, social-security, financial, and living-payment public-service venues."
+    },
+    {
+      "id": "STD-ELDERLY-SMART-TECH",
+      "path": "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md",
+      "publisher": "General Office of the State Council, PRC",
+      "published_date": "2020-11-24",
+      "accessed_date": "2026-08-10",
+      "source_type": "official_public",
+      "usable_for_formal": "background_only",
+      "usage": "Background reference for running traditional service channels in parallel with smart services, supporting age-friendly scenario design.",
+      "limitations": "The policy's phased targets have expired; not treated as a local implementation fact or statutory control."
+    },
+    {
+      "id": "CASE-ECOSYSTEM-KNOWLEDGE",
+      "publisher": "Agent-compiled from public knowledge",
+      "accessed_date": "2026-08-10",
+      "source_type": "agent_inferred_from_public_data",
+      "usable_for_formal": "background_only",
+      "usage": "Qualitative synthesis of global AI innovation-ecosystem cases (Boston Kendall Square, Toronto MaRS, Singapore one-north, Paris-Saclay, Seoul Sangam/Pangyo, Shenzhen Nanshan).",
+      "limitations": "Used only as qualitative mechanism lessons; no investment, output, or company-list commitments; each case must be re-verified against current public material before professional deepening."
+    },
+    {
+      "id": "TOOLCHAIN-DISCLOSURE",
+      "publisher": "Pasukalu Agent",
+      "published_date": "2026-08-10",
+      "accessed_date": "2026-08-10",
+      "source_type": "agent_generated_design",
+      "usage": "Disclosure of the generation toolchain (Python 3.12, shapely, pyproj, matplotlib, reportlab); all figures and PDFs derive from the same GeoJSON/metrics.",
+      "limitations": "Toolchain licensing is documented in report/copyright_statement.md."
+    }
+  ]
+}

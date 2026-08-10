@@ -1,0 +1,607 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_metabolism",
+  "crs_note": "Coordinates in EPSG:4326; areas recomputed in EPSG:4548.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "greenway",
+        "name_zh": "京张慢行绿脊",
+        "name_en": "Jing-Zhang slow-mobility green spine",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "南北贯通的步行骑行主脉，概念线位，不表示道路红线。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3481222,
+            39.9395002
+          ],
+          [
+            116.3481667,
+            39.9411216
+          ],
+          [
+            116.3482081,
+            39.9427429
+          ],
+          [
+            116.3482439,
+            39.9443643
+          ],
+          [
+            116.3482723,
+            39.9459855
+          ],
+          [
+            116.3482914,
+            39.9476068
+          ],
+          [
+            116.3482999,
+            39.9492279
+          ],
+          [
+            116.3482968,
+            39.950849
+          ],
+          [
+            116.3482817,
+            39.95247
+          ],
+          [
+            116.3482545,
+            39.954091
+          ],
+          [
+            116.3482157,
+            39.9557119
+          ],
+          [
+            116.3481662,
+            39.9573327
+          ],
+          [
+            116.3481074,
+            39.9589535
+          ],
+          [
+            116.348041,
+            39.9605742
+          ],
+          [
+            116.3479691,
+            39.9621949
+          ],
+          [
+            116.3478939,
+            39.9638156
+          ],
+          [
+            116.3478177,
+            39.9654363
+          ],
+          [
+            116.3477431,
+            39.967057
+          ],
+          [
+            116.3476723,
+            39.9686777
+          ],
+          [
+            116.3476076,
+            39.9702984
+          ],
+          [
+            116.347551,
+            39.9719192
+          ],
+          [
+            116.3475041,
+            39.9735401
+          ],
+          [
+            116.347468,
+            39.975161
+          ],
+          [
+            116.3474438,
+            39.9767819
+          ],
+          [
+            116.3474317,
+            39.978403
+          ],
+          [
+            116.3474315,
+            39.9800241
+          ],
+          [
+            116.3474428,
+            39.9816452
+          ],
+          [
+            116.3474644,
+            39.9832665
+          ],
+          [
+            116.3474948,
+            39.9848877
+          ],
+          [
+            116.3475322,
+            39.986509
+          ],
+          [
+            116.3475745,
+            39.9881304
+          ],
+          [
+            116.3476195,
+            39.9897517
+          ],
+          [
+            116.3476646,
+            39.9913731
+          ],
+          [
+            116.3477076,
+            39.9929944
+          ],
+          [
+            116.347746,
+            39.9946157
+          ],
+          [
+            116.3477777,
+            39.996237
+          ],
+          [
+            116.3478008,
+            39.9978582
+          ],
+          [
+            116.3478138,
+            39.9994794
+          ],
+          [
+            116.3478157,
+            40.0011005
+          ],
+          [
+            116.3478055,
+            40.0027216
+          ],
+          [
+            116.3477833,
+            40.0043425
+          ],
+          [
+            116.3477491,
+            40.0059634
+          ],
+          [
+            116.3477039,
+            40.0075843
+          ],
+          [
+            116.3476487,
+            40.0092051
+          ],
+          [
+            116.3475852,
+            40.0108258
+          ],
+          [
+            116.3475152,
+            40.0124465
+          ],
+          [
+            116.347441,
+            40.0140672
+          ],
+          [
+            116.3473648,
+            40.0156878
+          ],
+          [
+            116.3472892,
+            40.0173085
+          ],
+          [
+            116.3472165,
+            40.0189292
+          ],
+          [
+            116.3471489,
+            40.0205499
+          ],
+          [
+            116.3470887,
+            40.0221707
+          ],
+          [
+            116.3470374,
+            40.0237915
+          ],
+          [
+            116.3469967,
+            40.0254123
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "secondary",
+        "name_zh": "西侧创新联络道",
+        "name_en": "West innovation link road",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "概念次干路，服务西侧创新街区（非红线）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3461733,
+            39.9393091
+          ],
+          [
+            116.3453449,
+            40.0261547
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "secondary",
+        "name_zh": "东侧生活联络道",
+        "name_en": "East living link road",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "概念次干路，服务东侧生活街区（非红线）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3500341,
+            39.9393308
+          ],
+          [
+            116.3492106,
+            40.0261765
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路01",
+        "name_en": "East-west stitching street 01",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3405773,
+            39.9434203
+          ],
+          [
+            116.3553,
+            39.9435031
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路02",
+        "name_en": "East-west stitching street 02",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3404814,
+            39.9468748
+          ],
+          [
+            116.3553,
+            39.9469582
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路03",
+        "name_en": "East-west stitching street 03",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3400146,
+            39.9666278
+          ],
+          [
+            116.355163,
+            39.966713
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路04",
+        "name_en": "East-west stitching street 04",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3405682,
+            39.9884609
+          ],
+          [
+            116.3534174,
+            39.9885333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路05",
+        "name_en": "East-west stitching street 05",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3413426,
+            40.0004625
+          ],
+          [
+            116.353877,
+            40.0005331
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-009",
+      "properties": {
+        "id": "ROAD-009",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路06",
+        "name_en": "East-west stitching street 06",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3422226,
+            40.0167147
+          ],
+          [
+            116.3547675,
+            40.0167852
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-010",
+      "properties": {
+        "id": "ROAD-010",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "branch",
+        "name_zh": "东西缝合支路07",
+        "name_en": "East-west stitching street 07",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "缝合铁路廊道两侧的东西向支路（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3423923,
+            40.020194
+          ],
+          [
+            116.3549582,
+            40.0202646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-011",
+      "properties": {
+        "id": "ROAD-011",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "cycleway",
+        "name_zh": "小月河骑行道",
+        "name_en": "Xiaoyuehe cycleway",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "东侧蓝绿手指内的骑行道（概念建议）。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3534532,
+            39.9427723
+          ],
+          [
+            116.3528532,
+            40.0064129
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-012",
+      "properties": {
+        "id": "ROAD-012",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "transit_connection",
+        "name_zh": "众智园轨道接驳线",
+        "name_en": "众智园 transit connection",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "概念轨道站点接驳关系，站点位置待官方确认。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3493104,
+            40.015674
+          ],
+          [
+            116.347836,
+            40.0167464
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-013",
+      "properties": {
+        "id": "ROAD-013",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "transit_connection",
+        "name_zh": "原点社区轨道接驳线",
+        "name_en": "原点社区 transit connection",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "概念轨道站点接驳关系，站点位置待官方确认。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3495784,
+            39.9874311
+          ],
+          [
+            116.3481047,
+            39.9885035
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-014",
+      "properties": {
+        "id": "ROAD-014",
+        "layer": "ROAD_CENTERLINE",
+        "road_class": "transit_connection",
+        "name_zh": "大钟寺轨道接驳线",
+        "name_en": "大钟寺 transit connection",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "design_note_zh": "概念轨道站点接驳关系，站点位置待官方确认。"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3499724,
+            39.9458477
+          ],
+          [
+            116.3484996,
+            39.9469202
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": [
+        "Submitted boundary is the repository provisional polygon (PROV-SITE-001)."
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 3087058.523,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "union_area(green_space_features) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.27049,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 277501.949,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "union_area(public_space_features) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.024315,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 499601.701,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "union_area(building_footprints) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "building_density": {
+      "status": "known",
+      "value": 0.043775,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "confidence": "high",
+      "assumptions": [
+        "Conceptual massing only; official FAR/height controls pending."
+      ]
+    },
+    "road_centerline_length_m": {
+      "status": "known",
+      "value": 44546.443,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(centerline_length) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": [
+        "Conceptual centerlines; road redlines not provided."
+      ]
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "key_area_total_sqm": {
+      "status": "known",
+      "value": 3692893.005,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "sum(key_area_polygon_area) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": [
+        "Provisional rectangles; announcement total is 3,684,000 sqm."
+      ]
+    },
+    "phase_1_area_sqm": {
+      "status": "known",
+      "value": 1331456.512,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-001) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_2_area_sqm": {
+      "status": "known",
+      "value": 2460409.023,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-002) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "phase_3_area_sqm": {
+      "status": "known",
+      "value": 7620959.851,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "polygon_area(PHASE-003) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario_cards_in_proposal)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "persona_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(personas_in_proposal)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "ai_landmark_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(ai_pilgrimage_landmarks_in_proposal)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "global_case_study_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(global_ai_ecosystem_cases_in_proposal)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official boundary are not in the public site package.",
+      "required_for_formal_submission": true
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_height_control(site)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved height controls are not in the public site package.",
+      "required_for_formal_submission": true
+    },
+    "road_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "road_redline_area(site)",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Road redlines are not provided; centerlines are conceptual only.",
+      "required_for_formal_submission": true
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "floor_area_ratio * development_land_area",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Requires official FAR controls before calculation.",
+      "required_for_formal_submission": true
+    },
+    "land_use_05_area_sqm": {
+      "status": "known",
+      "value": 1024143.326,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=05) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_0701_area_sqm": {
+      "status": "known",
+      "value": 4734648.985,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=0701) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_0802_area_sqm": {
+      "status": "known",
+      "value": 1286716.962,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=0802) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_0804_area_sqm": {
+      "status": "known",
+      "value": 903924.775,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=0804) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_1207_area_sqm": {
+      "status": "known",
+      "value": 170702.437,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=1207) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_1401_area_sqm": {
+      "status": "known",
+      "value": 2845569.77,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=1401) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_1402_area_sqm": {
+      "status": "known",
+      "value": 210871.267,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=1402) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_1403_area_sqm": {
+      "status": "known",
+      "value": 128527.308,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=1403) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "land_use_16_area_sqm": {
+      "status": "known",
+      "value": 107718.11,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum_area(land_use_polygons where land_use_code=16) [EPSG:4548]",
+      "confidence": "high",
+      "assumptions": []
+    }
+  }
+}

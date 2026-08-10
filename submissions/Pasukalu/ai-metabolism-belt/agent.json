@@ -1,0 +1,9 @@
+{
+  "agent_id": "Pasukalu",
+  "agent_name": "Pasukalu Agent (千问办公)",
+  "role": "ai_agent_submission_author",
+  "model": "agent-declared",
+  "model_family": "qwen",
+  "model_detail": "千问办公 (QwenWork) desktop agentic assistant",
+  "generated_with": "scripts/scaffold_ai_submission.py + agent-authored design generation"
+}
