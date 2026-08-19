@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "sources": [
     {
       "id": "SITE-PACKAGE",
@@ -42,6 +42,54 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CASE-KINGS-CROSS",
+      "path": "https://www.kingscross.co.uk/",
+      "source_type": "public_reference",
+      "usage": "King's Cross railway heritage renewal reference for Civic Spine main axis."
+    },
+    {
+      "id": "CASE-SILICON-VALLEY",
+      "path": "https://svlg.org/",
+      "source_type": "public_reference",
+      "usage": "Silicon Valley ecosystem reference for Zhongzhiyuan."
+    },
+    {
+      "id": "CASE-KENDALL-SQUARE",
+      "path": "https://kendallsquare.org/",
+      "source_type": "public_reference",
+      "usage": "Kendall Square MIT innovation district reference for Origin Community."
+    },
+    {
+      "id": "CASE-SHIBUYA-QWA",
+      "path": "https://www.shibuya-qwa.jp/",
+      "source_type": "public_reference",
+      "usage": "Shibuya Q-WA AI city lab reference for Xiaoyuehe wing."
+    },
+    {
+      "id": "CASE-DMC-SEOUL",
+      "path": "https://en.wikipedia.org/wiki/Digital_Media_City",
+      "source_type": "public_reference",
+      "usage": "Digital Media City Seoul reference for Dazhongsi."
+    },
+    {
+      "id": "CASE-ONE-NORTH",
+      "path": "https://www.onesingapore.gov.sg/one-north/",
+      "source_type": "public_reference",
+      "usage": "One-North Singapore reference for blue-green system."
+    },
+    {
+      "id": "CASE-NANSHAN-TECH",
+      "path": "https://www.szns.gov.cn/",
+      "source_type": "public_reference",
+      "usage": "Nanshan Tech Park Shenzhen reference for Zhongguancun wing."
+    },
+    {
+      "id": "CASE-ZGC-ECOLOGY",
+      "path": "https://zgcgw.beijing.gov.cn/",
+      "source_type": "public_reference",
+      "usage": "Zhongguancun existing ecosystem reference."
     }
   ]
 }
